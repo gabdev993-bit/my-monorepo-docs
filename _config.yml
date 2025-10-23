@@ -1,0 +1,33 @@
+# GitHub Pages 설정
+title: My Monorepo Documentation
+description: My Monorepo 프로젝트의 모든 문서
+author: gabdev993-bit
+
+# Jekyll 설정
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Markdown 설정
+markdown: kramdown
+highlighter: rouge
+
+# 네비게이션
+navigation:
+  - title: Planning
+    url: /planning/
+  - title: Development
+    url: /development/
+  - title: Mobile
+    url: /mobile/
+  - title: Shared
+    url: /shared/
+
+# 기타 설정
+exclude:
+  - README.md
+  - node_modules
+  - .git
+  - .gitignore

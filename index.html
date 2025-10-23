@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Monorepo Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        .section h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .section ul {
+            margin: 10px 0;
+        }
+        .section li {
+            margin: 5px 0;
+        }
+        .section a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
+        .quick-start {
+            background: #e8f5e8;
+            border-left-color: #27ae60;
+        }
+        .quick-start h3 {
+            color: #27ae60;
+        }
+        .commands {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 My Monorepo 프로젝트 문서</h1>
+        
+        <p>이 사이트는 My Monorepo 프로젝트의 모든 문서를 포함합니다.</p>
+
+        <div class="section">
+            <h3>📋 Planning (계획 및 설계)</h3>
+            <ul>
+                <li><a href="planning/project-overview.md">프로젝트 개요</a> - 프로젝트 기본 정보 및 기술 스택</li>
+                <li><a href="planning/architecture.md">아키텍처 설계</a> - 시스템 아키텍처 및 데이터 플로우</li>
+                <li><a href="planning/roadmap.md">로드맵</a> - 개발 단계별 계획</li>
+                <li><a href="planning/requirements.md">요구사항 명세서</a> - 기능 및 비기능 요구사항</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🛠️ Development (개발 환경)</h3>
+            <ul>
+                <li><a href="development/setup-guides/environment-setup.md">환경 설정 가이드</a> - 전체 개발 환경 설정</li>
+                <li><a href="development/setup-guides/xcode-setup.md">Xcode 설정</a> - iOS 개발 환경</li>
+                <li><a href="development/setup-guides/android-setup.md">Android 설정</a> - Android 개발 환경</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>📱 Mobile (모바일 앱)</h3>
+            <ul>
+                <li><a href="mobile/auth-setup.md">인증 설정</a> - Supabase + Google OAuth 설정</li>
+                <li><a href="mobile/features/authentication.md">인증 기능</a> - 인증 시스템 사용법</li>
+                <li><a href="mobile/features/navigation.md">네비게이션</a> - 라우팅 및 네비게이션</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🔄 Shared (공유 문서)</h3>
+            <ul>
+                <li><a href="shared/conventions.md">코딩 컨벤션</a> - TypeScript, React Native 코딩 규칙</li>
+                <li><a href="shared/troubleshooting.md">문제 해결</a> - 일반적인 문제 및 해결 방법</li>
+            </ul>
+        </div>
+
+        <div class="section quick-start">
+            <h3>🚀 빠른 시작</h3>
+            
+            <h4>1. 개발 환경 설정</h4>
+            <div class="commands">
+# 의존성 설치<br>
+pnpm install<br><br>
+# 모바일 앱 개발 서버 시작<br>
+cd apps/mobile<br>
+pnpm dev
+            </div>
+
+            <h4>2. 주요 명령어</h4>
+            <div class="commands">
+# iOS 시뮬레이터 실행<br>
+pnpm ios<br><br>
+# Android 에뮬레이터 실행<br>
+pnpm android<br><br>
+# 빌드<br>
+eas build --platform all
+            </div>
+
+            <h4>3. 문서 읽기 순서</h4>
+            <ol>
+                <li><a href="shared/conventions.md">코딩 컨벤션</a> - 핵심 개발 규칙 숙지</li>
+                <li><a href="planning/project-overview.md">프로젝트 개요</a> - 프로젝트 이해</li>
+                <li><a href="development/setup-guides/environment-setup.md">환경 설정 가이드</a> - 개발 환경 구축</li>
+                <li><a href="mobile/auth-setup.md">인증 설정</a> - 인증 시스템 설정</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p><strong>마지막 업데이트</strong>: 2024년 12월</p>
+            <p>GitHub 저장소: <a href="https://github.com/gabdev993-bit/my-monorepo-docs">gabdev993-bit/my-monorepo-docs</a></p>
+        </div>
+    </div>
+</body>
+</html>
